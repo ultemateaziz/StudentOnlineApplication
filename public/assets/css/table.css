@@ -1,0 +1,187 @@
+
+  /* Styles for user table */
+  
+  #product-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#product-table th,
+#product-table td {
+    width: 500px;
+    text-align: center;
+    padding: 8px;
+}
+#product-table tr:nth-child(even) {
+    background-color: #dddbdb;
+}
+
+#product-table th {
+    background-color: #222831;
+    color: white;
+    cursor: pointer;
+    padding: 20px 0px;
+}
+
+#product-table th.sorted-asc::after {
+    content: " ▲";
+}
+#product-table th:not(.sorted-asc)::after {
+    content: " ▼";
+}
+#product-table .btnc.sorted-asc::after {
+    content: " ";
+}
+#product-table .btnc{
+    background-color: transparent;
+}
+
+#usTable {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px 50px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+#usTable  h1{
+    color: #2b4162;
+    font-size: 28px;
+    text-align: center;
+
+}
+#usTable  .button{
+    display: flex;
+    justify-content: space-around;
+}
+
+#userForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#userForm input[type=text] ,
+#userForm select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#userForm select{
+    width: 100%;
+}
+#userForm button {
+    background-color: #2b4162;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+#userForm button:hover {
+    background-color: #394a64;
+}
+
+/* Styles for user table */
+.userTable {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.userTable th,
+.userTable td {
+    text-align: left;
+    padding: 8px;
+}
+.userTable tbody td .fas{
+    cursor: pointer;
+}
+
+.userTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.userTable th {
+    background-color: #2b4162;
+    color: white;
+    cursor: pointer;
+}
+
+.userTable th.sorted-asc::after {
+    content: " ▲";
+}
+
+.userTable th:not(.sorted-asc)::after {
+    content: " ▼";
+}
+ /* Styles for user form */
+ #userForm {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 20px 50px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+#userForm  h1{
+    color: #2b4162;
+    font-size: 28px;
+    text-align: center;
+
+}
+#userForm  .btns{
+    display: flex;
+    justify-content: space-around;
+}
+#userForm .form-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#userForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#userForm input[type=text] ,
+#userForm input[type=date],
+#userForm select
+{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#userForm input[type=date]{
+    width: 100%;
+}
+#userForm select{
+    width: 100%;
+}
+#userForm button {
+    background-color: #2b4162;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+#userForm button:hover {
+    background-color: #394a64;
+}
